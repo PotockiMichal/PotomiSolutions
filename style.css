@@ -132,3 +132,20 @@ ul { margin: 0; padding-left: 18px; }
 .job-meta { display: contents; }
 .company { color: #111827; font-weight: 600; }
 .dates { color: #6b7280; margin-left: 16px; white-space: nowrap; }
+/* EDU — linia z datą, niżej szkoła od lewej */
+.sidebar .edu{
+  display: block !important;        /* wyłącza grid */
+  margin: 12px 0;
+}
+.sidebar .edu .years{
+  display: block !important;        /* nowa linia po dacie */
+  margin-bottom: 4px;
+  white-space: normal;
+}
+.sidebar .edu .school{
+  margin-left: 0 !important;        /* wyrównanie do lewej */
+}
+.sidebar .edu .school strong{
+  display: block;                   /* nazwa szkoły nad kierunkiem */
+  margin-bottom: 2px;
+}
