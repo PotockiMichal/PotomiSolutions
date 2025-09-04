@@ -97,9 +97,24 @@ ul { margin: 0; padding-left: 18px; }
 .icon-list .link::before  { content: "🔗"; }
 
 /* Edukacja w kolumnie */
-.edu { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; margin: 12px 0; }
-.edu .years { color: #6b7280; white-space: nowrap; }
-.edu .school { }
+.edu{
+  display: block;            /* zamiast gridu/kolumn */
+  margin: 12px 0;
+}
+.edu .years{
+  display: block;            /* wymusza nową linię */
+  color: #6b7280;
+  white-space: normal;       /* na wszelki wypadek */
+  margin-bottom: 4px;
+}
+.edu .school{
+  margin-left: 0;            /* wyrównanie do lewej */
+}
+.edu .school strong{
+  display: block;            /* nazwa szkoły nad kierunkiem */
+  margin-bottom: 2px;
+}
+
 
 /* Doświadczenie */
 .job { margin: 18px 0 24px; }
