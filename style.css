@@ -161,3 +161,24 @@ ul { margin: 0; padding-left: 18px; }
   grid-column: 1 / -1;              /* też pełna szerokość */
   margin-bottom: 4px;
 }
+/* EDU: data -> nowa linia -> szkoła (pełna szerokość) */
+.sidebar .edu{
+  display: grid !important;
+  grid-template-columns: 1fr !important;   /* tylko jedna kolumna */
+  grid-auto-rows: auto;
+  margin: 12px 0;
+}
+.sidebar .edu .years{
+  grid-column: 1 / -1 !important;          /* pełna szerokość */
+  display: block;
+  margin: 0 0 4px;
+  white-space: normal;
+}
+.sidebar .edu .school{
+  grid-column: 1 / -1 !important;          /* pełna szerokość */
+  margin: 0;
+}
+.sidebar .edu .school strong{
+  display: block;                           /* nazwa szkoły nad kierunkiem */
+  margin-bottom: 2px;
+}
