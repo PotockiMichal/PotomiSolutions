@@ -149,3 +149,15 @@ ul { margin: 0; padding-left: 18px; }
   display: block;                   /* nazwa szkoły nad kierunkiem */
   margin-bottom: 2px;
 }
+.sidebar .edu{
+  display: grid;
+  grid-template-columns: 1fr;       /* tylko 1 kolumna */
+}
+.sidebar .edu .school{
+  grid-column: 1 / -1;              /* pełna szerokość */
+  margin-left: 0;
+}
+.sidebar .edu .years{
+  grid-column: 1 / -1;              /* też pełna szerokość */
+  margin-bottom: 4px;
+}
